@@ -10,7 +10,7 @@ app.use(cors());
 const GROQ_API_KEY = "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"; 
 const TELEGRAM_TOKEN = "8691129739:AAGE2tw45-3zmda-ZTHI12QRsxRmmdmvu4k";
 
-// ✅ CARA BETUL (Guna Environment Variable)
+// Dia akan tarik secara automatik dari Environment Variable kat Render tadi
 const bot = new Telegraf(process.env.TELEGRAM_TOKEN);
 
 // Database sementara (RAM) - Untuk simpan task dari Telegram sebelum sync ke Web
