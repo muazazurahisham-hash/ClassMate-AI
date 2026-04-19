@@ -74,6 +74,11 @@ app.post("/analyze", async (req, res) => {
       })
     });
     const data = await response.json();
+
+    const PORT = process.env.PORT || 3001; // Render akan bagi port sendiri, kalau takda baru guna 3001
+app.listen(PORT, () => {
+    console.log(`🚀 Server & Bot sedang berjalan di port ${PORT}...`);
+});
     res.json(data);
   } catch (err) { res.status(500).json({ error: "Fail" }); }
 });
