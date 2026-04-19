@@ -3,7 +3,7 @@ import { useState, useEffect } from "react"
 // 🌐 TUKAR KAT SINI: 
 // Guna "http://localhost:3001" masa tengah buat kat laptop.
 // Ganti dengan link Render kau (e.g., https://classmate-backend.onrender.com) bila dah deploy.
-const BACKEND_URL = "http://localhost:3001";
+const BACKEND_URL = "https://classmate-backend-rirr.onrender.com";
 
 export default function App() {
   const [message, setMessage] = useState("")
